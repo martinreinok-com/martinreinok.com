@@ -19,7 +19,7 @@ header {
 
 .intro {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
 }
   
 header .nav-main {
@@ -63,4 +63,15 @@ header .nav-main .nav-list .link {
 }
 header .nav-main .nav-list .link:first-child {
   margin-left: 0;
+}
+
+/* Media query for screens under 650px width */
+@media screen and (max-width: 650px) {
+  header .nav-main .nav-list li {
+    margin: 0 1px;
+  }
+  header .nav-main .nav-list .link {
+    padding: 0.8rem 0.3rem;
+    margin: 0 0.4rem;
+  }
 }
