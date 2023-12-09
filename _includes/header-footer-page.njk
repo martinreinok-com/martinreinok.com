@@ -13,7 +13,7 @@
   <body>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     {% include 'templates/navbar.njk' %}
-    <main style="min-height: calc(100vh - 160px);">
+    <main style="min-height: calc(100vh - 160px); max-width: 75%; margin: 0 auto;">
       {{ content | safe }}
     </main>
     {% include 'templates/footer.njk' %}
