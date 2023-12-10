@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Formula Student <br>Team Tallinn",
+        "thumbnail": "/media/projects/fs-team-tallinn/fs-team-tallinn.jpg",
+        "link": "/projects/",
+        "description": "Engineering | Software | Media",
+        "date": "Aug 2018 - Sept 2020",
+        "alt": ""
+    },
+    {
+        "name": "Taltech <br>Cocktail Tailor",
+        "thumbnail": "/media/projects/taltech-cocktail-tailor/taltech-cocktail-tailor.jpg",
+        "link": "/projects/",
+        "description": "Software | Sensorics",
+        "date": "Feb 2021 - Jun 2021",
+        "alt": ""
+    },
+    {
+        "name": "Estonian Defence Forces",
+        "thumbnail": "/media/projects/estonian-defence-forces/estonian-defence-forces.jpg",
+        "link": "/projects/",
+        "description": "Software | Network",
+        "date": "Jul 2021 - Jun 2022",
+        "alt": ""
+    },
+    {
+        "name": "Bachelor Thesis",
+        "thumbnail": "/media/projects/bachelor-thesis/bachelor-thesis.jpg",
+        "link": "/projects/",
+        "description": "Software | System | CAD",
+        "date": "Sept 2020 - May 2021",
+        "alt": ""
+    }
+]
