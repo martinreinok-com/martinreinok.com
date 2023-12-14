@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is Martin Reinok portfolio. I am an Engineer who also creates music, software, artwork, renderings and more. Find all about me here.">
     <link rel="icon" type="image/x-icon" href="/media/icon.svg">
+    <link rel="stylesheet" href="/css/photoswipe/photoswipe.css" media="print" onload="this.media=&#39;all&#39;" />
+    <link rel="stylesheet" href="/css/photoswipe/skin/skin.css" media="print" onload="this.media=&#39;all&#39;" />
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>{{ title }}</title>
   </head>
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/navbar.css">
-  <link rel="stylesheet" href="/css/footer.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <body>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     {% include 'templates/navbar.njk' %}
-    <main style="min-height: calc(100vh - 160px); max-width: 75%; margin: 0 auto;">
+    <main style="min-height: calc(100vh - 160px); max-width: 800px; margin: 0 auto; padding: 50px; padding-top: 10px">
       {{ content | safe }}
+      {% addLightBoxRefIfNecessary %}
     </main>
     {% include 'templates/footer.njk' %}
   </body>
