@@ -21,9 +21,9 @@ module.exports = function (tokens, idx, options, env, slf, markdownLibrary) {
     // This is because the caption might be too long and awkward to display
     // in a crowded area.
     token.attrSet('title', captionRendered);
-    token.attrSet('style', "width: calc(33% - 0.5em);");
+    token.attrSet('style', "width: calc(33% - 0.5em); height: 200px; object-fit: cover;");
     if (env.evenItems) {
-      token.attrSet('style', "width: calc(50% - 0.5em);");
+      token.attrSet('style', "width: calc(50% - 0.5em); height: 200px; object-fit: cover;");
     }
 
     return `<a href="${token.attrs[token.attrIndex('src')][1]}">${slf.renderToken(tokens, idx, options)}</a>`;

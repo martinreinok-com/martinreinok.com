@@ -1,5 +1,13 @@
 [
     {
+        "name": "Textile Extensometer",
+        "thumbnail": "/media/projects/textile-extensiometer/textile-extensiometer.jpg",
+        "link": "/projects/",
+        "description": "System | Software",
+        "date": "Aug 2023 - Sept 2023",
+        "alt": ""
+    },
+    {
         "name": "Estonian Defence Forces",
         "thumbnail": "/media/projects/estonian-defence-forces/estonian-defence-forces.jpg",
         "link": "/projects/",
