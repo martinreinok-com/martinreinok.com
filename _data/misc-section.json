@@ -2,22 +2,50 @@
     {
         "name": "Photography",
         "thumbnail": "/media/misc/photography.jpg",
-        "link": "/misc/"
+        "link": "/misc/",
+        "isVideo": false
     },
     {
         "name": "3D Renders",
         "thumbnail": "/media/misc/3drender.jpg",
-        "link": "/misc/"
+        "link": "/misc/",
+        "isVideo": false
     },
     {
         "name": "Music",
         "thumbnail": "/media/misc/music.jpg",
-        "link": "/misc/"
+        "link": "/misc/",
+        "isVideo": false
     },
     {
         "name": "Videography",
         "link": "/misc/",
-        "video": "/media/misc/music.jpg"
+        "video": "/media/misc/videography.webm",
+        "isVideo": true
+    },
+    {
+        "name": "Youth work",
+        "link": "/misc/",
+        "thumbnail": "/media/misc/youthwork.jpg",
+        "isVideo": false
+    },
+    {
+        "name": "Games",
+        "link": "/misc/",
+        "thumbnail": "/media/misc/games.jpg",
+        "isVideo": false
+    },
+    {
+        "name": "Software",
+        "link": "/misc/",
+        "thumbnail": "/media/misc/software.jpg",
+        "isVideo": false
+    },
+    {
+        "name": "Blog",
+        "link": "/misc/",
+        "thumbnail": "/media/misc/blog.jpg",
+        "isVideo": false
     }
 ]
     

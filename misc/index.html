@@ -5,7 +5,16 @@ width: 100%
 <body>
 <div class="misc-section-container">
     {% for misc in misc-section %}
-        {% include "templates/misc-section.njk" %}
+    <div class="misc-section">
+        {% if misc.isVideo %}
+            <video class="misc-section-media" autoplay muted loop type="video/webm" src="{{ misc.video }}"></video>
+        {% else %}
+            <img class="misc-section-media" src="{{ misc.thumbnail }}">
+        {% endif %}
+        <a href="{{ misc.link }}" class="centered-link">
+            <h1 class="button-89">{{ misc.name }}</h1>
+        </a>
+    </div>
     {% endfor %}
 </div>
 </body>
