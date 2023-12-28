@@ -20,7 +20,8 @@
     {
         "name": "Videography",
         "link": "/misc/videography",
-        "video": "/media/misc/videography.webm",
+        "video_webm": "/media/misc/videography.webm",
+        "video_mp4": "/media/misc/videography.mp4",
         "isVideo": true
     },
     {
