@@ -7,7 +7,7 @@ width: 100%
     {% for misc in misc-section %}
     <div class="misc-section">
         {% if misc.isVideo %}
-            <video class="misc-section-media" src="{{ misc.video }}" type="video/webm" playsinline loop muted autoplay></video>
+            <video playsinline loop muted autoplay class="misc-section-media" src="{{ misc.video }}" type="video/webm"></video>
         {% else %}
             <img class="misc-section-media" src="{{ misc.thumbnail }}">
         {% endif %}
