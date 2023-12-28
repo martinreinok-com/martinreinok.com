@@ -1,3 +1,25 @@
 ---
 layout: header-footer-page.njk
+width: 100%
 ---
+<body>
+<div class="misc-section-container">
+    {% for misc in misc-section %}
+        {% include "templates/misc-section.njk" %}
+    {% endfor %}
+</div>
+</body>
+
+<!--
+<html>
+    <body>
+        <div class="column-container">
+        <div class="column">
+            <section class="gallery">
+            {% foldergallery "/media/gallery/" %}
+            </section>
+        </div>
+        </div>
+    </body>
+</html>
+-->

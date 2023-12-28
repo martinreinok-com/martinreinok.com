@@ -1,6 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
 // The `gallery` paired shortcode shows a set of images and displays it in a row together.
 let gallery = require('./js/gallery.shortcode');
 let imageRenderer = require('./js/markdownlibrary.renderer.image');
+let lightbox = require('./js/lightboxref.shortcode');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -24,6 +28,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPairedShortcode("gallery", (data, caption) => gallery(data, caption, markdownLibrary));
     markdownLibrary.renderer.rules.image = (tokens, idx, options, env, slf) => imageRenderer(tokens, idx, options, env, slf, markdownLibrary);
 
-    let lightbox = require('./js/lightboxref.shortcode');
     eleventyConfig.addShortcode("addLightBoxRefIfNecessary", function () { return lightbox(this.page); });
+    eleventyConfig.addShortcode("foldergallery", function (folderPath) { return require('./js/foldergallery.shortcode')(folderPath); });
   };

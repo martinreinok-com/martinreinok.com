@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Photography",
+        "thumbnail": "/media/misc/photography.jpg",
+        "link": "/misc/"
+    },
+    {
+        "name": "3D Renders",
+        "thumbnail": "/media/misc/3drender.jpg",
+        "link": "/misc/"
+    },
+    {
+        "name": "Music",
+        "thumbnail": "/media/misc/music.jpg",
+        "link": "/misc/"
+    },
+    {
+        "name": "Videography",
+        "link": "/misc/",
+        "video": "/media/misc/music.jpg"
+    }
+]
+    
+    
+    

@@ -73,6 +73,39 @@
   display: none;
 }
 
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #ffffff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
 .column-container {
   display: flex;
   flex-wrap: wrap;
@@ -141,4 +174,48 @@
 
 .sl-overlay {
   background: #000 !important;
+}
+
+.foldergallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items */
+  margin: 0 auto; /* Center the container itself */
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  padding: 20px; /* Add some space around the container */
+}
+
+.foldergallery-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Crop the image to maintain aspect ratio and cover the container */
+  padding: 2px;
+}
+
+
+.misc-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+}
+
+.misc-section {
+  width: 50vw;
+  height: 40vh;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.misc-section-image {
+  width: 100%;
+  height: 100%;
 }
