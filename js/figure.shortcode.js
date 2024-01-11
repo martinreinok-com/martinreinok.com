@@ -20,6 +20,7 @@ module.exports = function (image, caption, widthName, useLightbox, markdownLibra
       width = 'max-width: unset';
       break;
     default:
+      width = 'width: 100%;';
       break;
   }
 

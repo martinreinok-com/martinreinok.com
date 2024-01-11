@@ -2,7 +2,7 @@
     {
         "name": "Textile Extensometer",
         "thumbnail": "/media/projects/textile-extensiometer/textile-extensiometer.jpg",
-        "link": "/projects/",
+        "link": "/projects/textile-extensiometer",
         "description": "System | Software",
         "date": "Aug 2023 - Sept 2023",
         "alt": ""
@@ -10,7 +10,7 @@
     {
         "name": "Estonian Defence Forces",
         "thumbnail": "/media/projects/estonian-defence-forces/estonian-defence-forces.jpg",
-        "link": "/projects/",
+        "link": "/projects/estonian-defence-forces",
         "description": "Software | Network",
         "date": "Jul 2021 - Jun 2022",
         "alt": ""
@@ -18,7 +18,7 @@
     {
         "name": "Bachelor Thesis",
         "thumbnail": "/media/projects/bachelor-thesis/bachelor-thesis.jpg",
-        "link": "/projects/",
+        "link": "/projects/bachelor-thesis",
         "description": "Software | System | CAD",
         "date": "Sept 2020 - May 2021",
         "alt": ""
@@ -26,7 +26,7 @@
     {
         "name": "Taltech <br>Cocktail Tailor",
         "thumbnail": "/media/projects/taltech-cocktail-tailor/taltech-cocktail-tailor.jpg",
-        "link": "/projects/",
+        "link": "/projects/taltech-cocktail-tailor",
         "description": "Software | Sensorics",
         "date": "Feb 2021 - Jun 2021",
         "alt": ""
