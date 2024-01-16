@@ -16,6 +16,7 @@
     {% include 'templates/navbar.njk' %}
     <main style="min-height: calc(100vh - 160px); max-width: {{ width }}; margin: 0 auto;">
       {{ content | safe }}
+      {% addLightBoxRefIfNecessary %}
     </main>
     {% include 'templates/footer.njk' %}
   </body>
