@@ -1,5 +1,13 @@
 [
     {
+        "name": "Master Thesis",
+        "thumbnail": "/media/projects/master-thesis/master-thesis.jpg",
+        "link": "/projects/master-thesis",
+        "description": "Software | Integration",
+        "date": "Nov 2023 - May 2024",
+        "alt": ""
+    },
+    {
         "name": "Textile Extensometer",
         "thumbnail": "/media/projects/textile-extensiometer/textile-extensiometer.jpg",
         "link": "/projects/textile-extensiometer",

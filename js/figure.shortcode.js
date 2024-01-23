@@ -1,5 +1,9 @@
 const path = require("path");
 
+function isNumber(value) {
+  return typeof value === 'number';
+}
+
 /**
  * Paired shortcode to display a figure with caption.
  * This is very similar to the regular Markdown image,
@@ -20,7 +24,12 @@ module.exports = function (image, caption, widthName, useLightbox, markdownLibra
       width = 'max-width: unset';
       break;
     default:
-      width = 'width: 100%;';
+      if (isNumber(widthName)) {
+        const num = parseFloat(widthName);
+        width = `width: calc(${num}% - 0.5em);`;
+      } else {
+        width = 'width: 100%;';
+      }
       break;
   }
 
