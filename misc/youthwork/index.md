@@ -11,4 +11,5 @@ I have been part of the sailing summer camp [Merelaager](https://merelaager.ee/)
 {% gallery %}
 ![Me sailing](/media/misc/youthwork/me-sailing.jpg)
 ![Sailing training](/media/misc/youthwork/sailing-training.jpg)
+![Me and my sister](/media/misc/youthwork/me-and-sister.JPG)
 {% endgallery %}
