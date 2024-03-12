@@ -2,41 +2,56 @@
 layout: header-footer-post.njk
 ---
 
-# This page is under construction, currently only the project's images can be viewed:
+# Textile Extensiometer
 <br><br>
 
 ## Project description
-This is a automation project for a textile extensiometer tool. The extensiometer's manual winding and ruler was replaced by a motor and a laser, controlled by a PLC and Arduino. A 3kg force was replaced by a force sensor.
+<br>
+This project automates a fabric extensiometer used for quality control of textiles and fabrics. Beforehand the extensiometer had to be winded manually, with mechanically attached 3kg weight. This project replaces the winding with a motor and the weight with a load cell. Additionally a laser is added for more accurate results, however the ruler on the device will remain for double checking.  
+
+<br>
+Overall the system makes the textile testing process more convienient and accurate.
 <br><br>
 
-### Side by side
+### Components used
+<br>
+
+- **Non-captive stepper motor** from Nanotec, with DMD560-SV controller.
+- **Arduino Nano** for logic and stepper control
+- **Siemens LOGO!** PLC for safety system (E-stop and 24V & 5V relays)
+- **Panasonic HG-C1200-P laser distance sensor**
+- 24V & 5V PSU
+
+<br><br>
+
+## Codebase of this project (C++)
+[GitHub](https://github.com/martinreinok/SDL_Atlas) 
+<br><br>
+
+## Side by side
 Here is an image that has the reworked robot, alongside the original, manual tool.
 {% figure "/media/projects/textile-extensiometer/side-by-side.jpg", "" %}
 <br><br>
 
-## Codebase of this project
-[GitHub](https://github.com/martinreinok/SDL_Atlas) 
-<br><br>
-
-### CAD design
+## CAD design
 {% figure "/media/projects/textile-extensiometer/cad-design.png", "" %}
 <br><br>
 
-### Electrical Box
+## Electrical Box
 {% gallery %}
 ![Box inside](/media/projects/textile-extensiometer/inside-box.jpg)
 ![Box outside](/media/projects/textile-extensiometer/outside-box.jpg)
 {% endgallery %}
 <br><br>
 
-### Motor mount & Laser
+## Motor mount & Laser
 {% figure "/media/projects/textile-extensiometer/motor-mount-laser.png", "" %}
 <br><br>
 
-### Force Sensor
+## Force Sensor
 {% figure "/media/projects/textile-extensiometer/force-sensor.png", "" %}
 <br><br>
 
-### Remote
+## Remote
 {% figure "/media/projects/textile-extensiometer/robot-and-remote.jpg", "" %}
 <br><br>

@@ -1,6 +1,12 @@
 ---
 layout: header-footer-post.njk
 ---
+
+# Formula Student Team Tallinn
+
+I was at the team for 2.5 years during my bachelor studies. This page is a summary of my experiences and projects during that time. This is the team's homepage: [https://www.formulastudent.ee/](https://www.formulastudent.ee/)
+<br><br>
+
 ## Electronics
 <br>
 
@@ -27,10 +33,33 @@ This was also designed with Altium, and Catia was used to designe the mounting c
 ![TSAL on the car](/media/projects/fs-team-tallinn/tsal2.jpg)
 {% endgallery %}
 
+<br>
+
+### Charger
+Charger is used for charging the formula :). The year I joined, the team split into two: electric formula and driverless formula. This also meant we needed a new charger, which I designed and we built it with the team. It features quite an unique normally-closed brake mechanism, air tires for smooth ride and a nice shelf for miscellanious storage. The design is quite large, could be more compact but it worked well for the purpose.
+
+{% figure "/media/projects/fs-team-tallinn/charger4.jpg", "", "" %}
+
+{% gallery %}
+![charger1](/media/projects/fs-team-tallinn/charger1.jpg)
+![charger2](/media/projects/fs-team-tallinn/charger3.png)
+{% endgallery %}
+
+<br>
 
 ## Software
+I contributed to the development of our Formula's Control System. Control System is software layer which runs in near Real-Time and calculates speed or torque setpoints for the motors, based on sensorics data (e.g. IMU, Ground Speed Sensor), gaspedal position and battery power. 
+<br>
 
-<br><br>
+The software was written in Simulink/C. 
+
+{% gallery %}
+![Simulink overview](/media/projects/fs-team-tallinn/simulink-overview.png)
+![Simulink inputs](/media/projects/fs-team-tallinn/simulink-inputs.png)
+![Simulink vectoring](/media/projects/fs-team-tallinn/simulink-vectoring.png)
+{% endgallery %}
+
+<br>
 
 ## Media
 <br>
@@ -55,7 +84,7 @@ The Design Wall was a large backlight wall, with a very high quality renders of 
 The renders on the wall highlight the complicated parts of the design and made it easier the show the "insides" of the car. It also highlights all of the team's sponsors.  
 It probably helped us to win the 2019 Italy design event.
 
-<br><br>
+<br>
 
 {% gallery %}
 ![Design Wall 2019, Italy](/media/projects/fs-team-tallinn/design-wall.jpg)
@@ -63,8 +92,22 @@ It probably helped us to win the 2019 Italy design event.
 ![Design Wall 2019, Italy](/media/projects/fs-team-tallinn/design-wall3.png)
 {% endgallery %}
 
+<br>
+
 ### Sponsor content
+I designed some fun sponsor posts as well.
+<br><br>
+
+{% figure "/media/projects/fs-team-tallinn/kissoft.gif", "", "" %}
+{% figure "/media/projects/fs-team-tallinn/hufschmied.gif", "", "" %}
+{% figure "/media/projects/fs-team-tallinn/happy-new-year-2019.jpg", "", "" %}
+
 <br>
 
 ### Calendar
+I also designed the team Calendar for the year 2020. Each team member was able to get one, and some were sent out to other student formula teams. Each month in the calendar had FS Team Tallinn can from a different year :)
+
+<br>
+
+{% figure "/media/projects/fs-team-tallinn/calendar-last-page.jpg", "", "" %}
 

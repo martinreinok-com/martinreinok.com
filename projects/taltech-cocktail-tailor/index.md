@@ -2,11 +2,16 @@
 layout: header-footer-post.njk
 ---
 
-# This page is under construction, currently only the project's images can be viewed:
+# Taltech Cocktail Tailor
 <br><br>
 
 ## Project description
-This was a automation project, part of a course in TalTech. My role was mostly software, a bit of CAD and system design as well.
+This was a student project in TalTech.  
+It was an automation project, with the goal of converting an old CNC machine into a automated Cocktail making machine. 
+
+<br>
+
+My role was mostly software, a bit of CAD and system design as well. I developed C++ code for the motor control on ancient, legacy windows XP and helped to co-create the main loop of the system.
 <br><br>
 
 ### Final product
@@ -15,10 +20,12 @@ Here is an image that has the finished product, by the end of the course
 <br><br>
 
 ### Making a Cocktail
+Well, actually water was used for testing purposes :)
 {% figure "/media/projects/taltech-cocktail-tailor/making-cocktail.gif", "" %}
 <br><br>
 
 ### Payment terminal
+We had a separate team working on getting payments working.
 {% figure "/media/projects/taltech-cocktail-tailor/payment-terminal.jpeg", "" %}
 <br><br>
 

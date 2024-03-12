@@ -2,6 +2,10 @@
 layout: header-footer-post.njk
 ---
 
+# Estonian Defence Forces 
+IT Department
+<br><br>
+
 ## Project description
 I was a network & DevOps engineer during my conscription. My main projects were:
 - Custom Debian distribution with pre-installed software for quick setup on the field.

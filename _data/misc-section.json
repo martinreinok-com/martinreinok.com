@@ -38,7 +38,7 @@
     },
     {
         "name": "Software",
-        "link": "/misc/software",
+        "link": "https://github.com/martinreinok",
         "thumbnail": "/media/misc/software.jpg",
         "isVideo": false
     }
