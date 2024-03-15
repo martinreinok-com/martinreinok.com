@@ -1,0 +1,152 @@
+[
+    {
+        "category": "Software",
+        "software": [
+            {
+                "name": "Python",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "C and C++",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Unreal Engine",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Powershell",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Java",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "VHDL",
+                "logo": "/media/logos/",
+                "description": "description"
+            }
+        ]
+    },
+    {
+        "category": "Engineering",
+        "software": [
+            {
+                "name": "CATIA V5",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Altium Designer",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Matlab and Simulink",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "VMware vSphere",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Omron and Siemens PLC",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Solidworks",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Siemens NX",
+                "logo": "/media/logos/",
+                "description": "description"
+            }
+        ]
+    },
+    {
+        "category": "Photo- and Videography",
+        "software": [
+            {
+                "name": "Adobe Photoshop",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Adobe Premiere Pro",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "DaVinci Resolve",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Adobe After Effects",
+                "logo": "/media/logos/",
+                "description": "description"
+            }
+        ]
+    },
+    {
+        "category": "3D Rendering and Modelling",
+        "software": [
+            {
+                "name": "Cinema 4D",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "V-Ray Render",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "DAZ Studio",
+                "logo": "/media/logos/",
+                "description": "description"
+            },
+            {
+                "name": "Blender",
+                "logo": "/media/logos/",
+                "description": "description"
+            }
+        ]
+    },
+    {
+        "category": "Music",
+        "software": [
+            {
+                "name": "FL Studio",
+                "logo": "/media/logos/",
+                "description": "description"
+            }
+        ]
+    },
+    {
+        "category": "Web Development",
+        "software": [
+            {
+                "name": "Eleventy",
+                "logo": "/media/logos/",
+                "description": "Basic HTML, JS and CSS. A little React experience"
+            }
+        ]
+    }
+]
