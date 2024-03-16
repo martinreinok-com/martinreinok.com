@@ -14,6 +14,10 @@ layout: header-footer-post.njk
 {% figure "/media/projects/bachelor-thesis/bachelor-thesis.jpg", "" %}
 <br><br>
 
+### Camera System
+{% figure "/media/projects/bachelor-thesis/camera-construction.jpg", "" %}
+<br><br>
+
 ### Codebase
 {% figure "/media/projects/bachelor-thesis/codebase.png", "" %}
 <br><br>
