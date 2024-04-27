@@ -14,27 +14,31 @@ module.exports = function (folderPath) {
 
     const images = folder_data
         .filter(dirent => dirent.isFile())
-        .map(dirent => dirent.name);
+        .map(dirent => ({
+            name: dirent.name,
+            path: path.join(highresFolderPath, dirent.name),
+            thumbnailPath: path.join(thumbnailFolderPath, dirent.name),
+            stats: fs.statSync(path.join(highresFolderPath, dirent.name))
+        }))
+        .sort((a, b) => b.stats.mtime.getTime() - a.stats.mtime.getTime()); // Sort by modification time
+
     let galleryHTML = '<div class="foldergallery">';
     
     images.forEach(image => {
-        const thumbnailImagePath = path.join(thumbnailFolderPath, image);
-        const imagePath = path.join(highresFolderPath, image);
-
-        if (!fs.existsSync(thumbnailImagePath)) {
-            console.log("Creating thumbnail:", thumbnailImagePath);
-            sharp(imagePath)
+        if (!fs.existsSync(image.thumbnailPath)) {
+            console.log("Creating thumbnail:", image.thumbnailPath);
+            sharp(image.path)
                 .resize({ width: 500 })
-                .toFile(thumbnailImagePath, (err, info) => {
+                .toFile(image.thumbnailPath, (err, info) => {
                     if (err) {
                         console.error('Error generating thumbnail:', err);
                     }
                 });
         }
-        linkOpen = `<a href="${folderPath}/${image}">`;
+        linkOpen = `<a href="${folderPath}/${image.name}">`;
         linkClose = `</a>`;
         galleryHTML += `
-        <figure>${linkOpen}<img src="${folderPath}/thumbnail/${image}" class="foldergallery-img" loading="lazy"/>${linkClose}<figcaption></figcaption></figure>`;
+        <figure>${linkOpen}<img src="${folderPath}/thumbnail/${image.name}" class="foldergallery-img" loading="lazy"/>${linkClose}<figcaption></figcaption></figure>`;
     });
     
     galleryHTML += '</div>';
