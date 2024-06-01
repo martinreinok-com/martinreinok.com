@@ -51,5 +51,6 @@ module.exports = function (image, caption, widthName, useLightbox, markdownLibra
     rendered = `<figure style="${width}"><img src="${image}" alt="${caption}" loading="lazy" /><figcaption>${captionMarkup}</figcaption></figure>`;
   }
 
-  return rendered;
+  let containerMarkup = `<div style="text-align: center; margin-top: 15px;">${rendered}</div>`;
+  return containerMarkup;
 }
