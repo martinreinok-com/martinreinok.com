@@ -7,11 +7,48 @@ width: 75%
 <html>
 <head>
   <title>Download Resume</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .pdf-container {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .pdf-viewer {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-<div style="text-align: center;">
-  <a class="button-4" role="button" href="/media/resume/Resume-Martin-Reinok.pdf" download="Resume-Martin-Reinok.pdf">Download Resume</a>
-  <p style="padding-top: 15px;">This page is still under construction, my resume can be downloaded using the button above :).</p>
-</div>
+  <div class="container">
+    <div class="pdf-container">
+      <iframe 
+        class="pdf-viewer"
+        src="/media/resume/martin-reinok-resume.pdf#view=FitH"
+        type="application/pdf"
+        title="Resume PDF">
+          <p>It appears your browser doesn't support embedded PDFs. 
+            <a href="/media/resume/martin-reinok-resume.pdf">Click here to view the PDF</a>.
+          </p>
+      </iframe>
+    </div>
+
+    <a class="button-4" role="button" href="/media/resume/martin-reinok-resume.pdf" download="martin-reinok-resume.pdf">
+      Download Resume
+    </a>
+
+  </div>
 </body>
 </html>
