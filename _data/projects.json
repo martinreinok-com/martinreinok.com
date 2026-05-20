@@ -1,5 +1,29 @@
 [
     {
+        "name": "EDF - Hackathon",
+        "thumbnail": "/media/projects/getac-tablet/thumbnail.jpg",
+        "link": "/projects/getac-tablet",
+        "description": "Software | Integration",
+        "date": "May 2026",
+        "alt": ""
+    },
+    {
+        "name": "Dueffe Quilting Machine",
+        "thumbnail": "/media/projects/dueffe/thumbnail.jpg",
+        "link": "/projects/dueffe",
+        "description": "Software | Integration",
+        "date": "2025 - ongoing",
+        "alt": ""
+    },
+    {
+        "name": "Thales",
+        "thumbnail": "/media/projects/thales/thumbnail.jpg",
+        "link": "/projects/thales",
+        "description": "Software",
+        "date": "2023 - 2025",
+        "alt": ""
+    },
+    {
         "name": "Master Thesis",
         "thumbnail": "/media/projects/master-thesis/master-thesis.jpg",
         "link": "/projects/master-thesis",
