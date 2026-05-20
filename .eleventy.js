@@ -25,6 +25,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./media/");
     eleventyConfig.addPassthroughCopy("./misc/");
     eleventyConfig.addPassthroughCopy("./js/");
+    eleventyConfig.addPassthroughCopy("./icons/");
     eleventyConfig.addPassthroughCopy({ "node_modules/simplelightbox/dist/simple-lightbox.min.css": "simplelightbox/simple-lightbox.min.css" });
     eleventyConfig.addPassthroughCopy({ "node_modules/simplelightbox/dist/simple-lightbox.min.js": "simplelightbox/simple-lightbox.min.js" });
     eleventyConfig.addPairedShortcode("gallery", (data, caption) => gallery(data, caption, markdownLibrary));
