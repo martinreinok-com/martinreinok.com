@@ -4,6 +4,25 @@ function isNumber(value) {
   return typeof value === 'number';
 }
 
+function isVideo(filename) {
+  const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov', '.mkv'];
+  return videoExtensions.some(ext => filename.toLowerCase().endsWith(ext));
+}
+
+function videoMimeType(filename) {
+  switch (path.extname(filename).toLowerCase()) {
+    case '.webm':
+      return 'video/webm';
+    case '.ogg':
+      return 'video/ogg';
+    case '.mov':
+      return 'video/quicktime';
+    case '.mp4':
+    default:
+      return 'video/mp4';
+  }
+}
+
 /**
  * Paired shortcode to display a figure with caption.
  * This is very similar to the regular Markdown image,
@@ -34,21 +53,28 @@ module.exports = function (image, caption, widthName, useLightbox, markdownLibra
   }
 
   let captionMarkup = "";
-  let linkOpen = "", linkClose = "";
   if (caption !== undefined && caption !== "") {
     captionMarkup = markdownLibrary.renderInline(caption);
   }
 
-  if(useLightbox){
-    // We've configure simplelightbox to render if there's a `figure > a`.
-    linkOpen = `<a href="${image}">`;
-    linkClose = `</a>`;
+  let mediaMarkup;
+  if (isVideo(image)) {
+    mediaMarkup = `<video style="${width}cursor: pointer;" autoplay muted loop playsinline onclick="this.paused ? this.play() : this.pause();">
+      <source src="${image}" type="${videoMimeType(image)}">
+      Your browser does not support the video tag.
+    </video>`;
+  } else {
+    let linkOpen = "", linkClose = "";
+    if(useLightbox){
+      linkOpen = `<a href="${image}">`;
+      linkClose = `</a>`;
+    }
+    mediaMarkup = `${linkOpen}<img src="${image}" alt="${caption}" loading="lazy" style="${width}" />${linkClose}`;
   }
 
-  let rendered = `<figure>${linkOpen}<img src="${image}" alt="${caption}" loading="lazy" style="${width}" />${linkClose}<figcaption>${captionMarkup}</figcaption></figure>`;
+  let rendered = `<figure>${mediaMarkup}<figcaption>${captionMarkup}</figcaption></figure>`;
   if(widthName==='unconstrained'){
-    //Since it's the image's 100% size anyway, there's no point in giving it a lightbox. Just wrap it in a figure tag, so it gets centered at least.
-    rendered = `<figure style="${width}"><img src="${image}" alt="${caption}" loading="lazy" /><figcaption>${captionMarkup}</figcaption></figure>`;
+    rendered = `<figure style="${width}">${mediaMarkup}<figcaption>${captionMarkup}</figcaption></figure>`;
   }
 
   let containerMarkup = `<div style="text-align: center; margin-top: 15px;">${rendered}</div>`;
