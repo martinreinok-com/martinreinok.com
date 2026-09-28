@@ -2,15 +2,18 @@
 layout: header-footer-post.njk
 ---
 
-# *This project is still in progress*
-<br><br>
+# Completed project
 
-## Thesis link
-[TBD]()
-<br><br>
+The final dissertation and related publications are available here.
 
-## Thesis code repository
-[GitHub](https://github.com/martinreinok/master-thesis)
+## Final thesis
+[University of Twente dissertation](https://purl.utwente.nl/essays/99939)
+
+## Related conference papers
+1. [IEEE paper: An Improved Mobile Overhead Vehicle Inspection Mechanism with a Variable Geometry Manipulator](https://ieeexplore.ieee.org/abstract/document/10596919)
+2. [IEEE paper: Real-time Flexible Nodal Force Control of a Cable-Driven Mobile Manipulator for Overhead Asset Inspection](https://ieeexplore.ieee.org/abstract/document/11655361)
+3. [ISMRM abstract: Interactive guidewire detection using a real-time CNN for MRI-guided endovascular interventions](https://archive.ismrm.org/2025/4839.html)
+
 <br><br>
 
 ## Problem description
@@ -99,6 +102,11 @@ The CNN performance was analyzed against manual annotation, and the results can 
 <br><br>
 Here is an example of real-time CNN detection:
 {% figure "/media/projects/master-thesis/real-time-detection-example.gif", "Real-Time CNN detection", 80 %}
+<br><br>
+
+### System operation
+{% figure "/media/projects/master-thesis/cathbot.mp4", "Cathbot motion", "half" %}
+{% figure "/media/projects/master-thesis/cathbot_controls.mp4", "Cathbot control interface", "half" %}
 <br><br>
 
 ## Safety layers
