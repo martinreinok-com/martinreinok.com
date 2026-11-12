@@ -10,9 +10,9 @@ The final dissertation and related publications are available here.
 [University of Twente dissertation](https://purl.utwente.nl/essays/99939)
 
 ## Related conference papers
-1. [IEEE paper: An Improved Mobile Overhead Vehicle Inspection Mechanism with a Variable Geometry Manipulator](https://ieeexplore.ieee.org/abstract/document/10596919)
-2. [IEEE paper: Real-time Flexible Nodal Force Control of a Cable-Driven Mobile Manipulator for Overhead Asset Inspection](https://ieeexplore.ieee.org/abstract/document/11655361)
-3. [ISMRM abstract: Interactive guidewire detection using a real-time CNN for MRI-guided endovascular interventions](https://archive.ismrm.org/2025/4839.html)
+1. [IEEE paper: Automated Passive Tracking for MR-guided Endovascular Interventions](https://ieeexplore.ieee.org/abstract/document/10596919)
+2. [IEEE paper: AI-Assisted Guidewire Tracking and Tactile Feedback for MRI-Guided Endovascular Procedures](https://ieeexplore.ieee.org/abstract/document/11655361)
+3. [ISMRM abstract: Physics-Driven Passive Marker Tracking for MR-Guided Endovascular Interventions](https://archive.ismrm.org/2025/4839.html)
 
 <br><br>
 
@@ -107,8 +107,4 @@ Here is an example of real-time CNN detection:
 ### System operation
 {% figure "/media/projects/master-thesis/cathbot.mp4", "Cathbot motion", "half" %}
 {% figure "/media/projects/master-thesis/cathbot_controls.mp4", "Cathbot control interface", "half" %}
-<br><br>
-
-## Safety layers
-*To be added.*
 <br><br>
